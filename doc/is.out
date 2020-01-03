@@ -1,0 +1,44 @@
+\BOOKMARK [0][-]{chapter.1}{Rules and policies}{}% 1
+\BOOKMARK [0][-]{chapter.2}{AI projects and tools \(W1\)}{}% 2
+\BOOKMARK [1][-]{section.2.1}{AI undergraduate projects}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{AI-related competitions}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Running latex}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Linux support}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.5}{Exercises}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{Installing the tool \(W2\)}{}% 8
+\BOOKMARK [1][-]{section.3.1}{Exercises}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{Running and understanding examples \(W3\)}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Exercises}{chapter.4}% 11
+\BOOKMARK [0][-]{chapter.5}{Understanding conceptual instrumentation \(W4\)}{}% 12
+\BOOKMARK [1][-]{section.5.1}{Exercises}{chapter.5}% 13
+\BOOKMARK [0][-]{chapter.6}{Project description \(W5\)}{}% 14
+\BOOKMARK [1][-]{section.6.1}{Narrative description}{chapter.6}% 15
+\BOOKMARK [1][-]{section.6.2}{Facts}{chapter.6}% 16
+\BOOKMARK [1][-]{section.6.3}{Specifications}{chapter.6}% 17
+\BOOKMARK [1][-]{section.6.4}{Top level design of the scenario}{chapter.6}% 18
+\BOOKMARK [1][-]{section.6.5}{Knowledge acquisition}{chapter.6}% 19
+\BOOKMARK [1][-]{section.6.6}{Related work}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.7}{Exercises}{chapter.6}% 21
+\BOOKMARK [0][-]{chapter.7}{Preliminary results \(W7\)}{}% 22
+\BOOKMARK [1][-]{section.7.1}{Exercises}{chapter.7}% 23
+\BOOKMARK [0][-]{chapter.8}{Implementation details \(W9\)}{}% 24
+\BOOKMARK [1][-]{section.8.1}{Relevant code}{chapter.8}% 25
+\BOOKMARK [1][-]{section.8.2}{Common bad practice in AI undergraduate projects}{chapter.8}% 26
+\BOOKMARK [1][-]{section.8.3}{Exercises}{chapter.8}% 27
+\BOOKMARK [0][-]{chapter.9}{Tool expressivity \(W10\)}{}% 28
+\BOOKMARK [0][-]{chapter.10}{Graphs and experiments \(W11\)}{}% 29
+\BOOKMARK [1][-]{section.10.1}{Evaluation metrics}{chapter.10}% 30
+\BOOKMARK [0][-]{chapter.11}{Related work and documentation \(W12\)}{}% 31
+\BOOKMARK [1][-]{section.11.1}{Related approaches}{chapter.11}% 32
+\BOOKMARK [1][-]{section.11.2}{Advantages and limitations of your solution}{chapter.11}% 33
+\BOOKMARK [1][-]{section.11.3}{Possible extensions of the current work}{chapter.11}% 34
+\BOOKMARK [0][-]{chapter.12}{Project demo and documentation \(W13\)}{}% 35
+\BOOKMARK [1][-]{section.12.1}{Exercises}{chapter.12}% 36
+\BOOKMARK [0][-]{chapter.13}{Results dissemination and feedback \(W14\)}{}% 37
+\BOOKMARK [1][-]{subsection.13.0.1}{Public presentation}{chapter.13}% 38
+\BOOKMARK [2][-]{subsection.13.0.2}{Self-assessment}{subsection.13.0.1}% 39
+\BOOKMARK [2][-]{subsection.13.0.3}{Formative feedback}{subsection.13.0.1}% 40
+\BOOKMARK [2][-]{subsection.13.0.4}{Problem-based learning}{subsection.13.0.1}% 41
+\BOOKMARK [0][-]{appendix.A}{Your original code}{}% 42
+\BOOKMARK [0][-]{appendix.B}{Quick technical guide for running your project}{}% 43
+\BOOKMARK [0][-]{appendix.C}{Check list}{}% 44

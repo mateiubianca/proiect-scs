@@ -1,0 +1,1131 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{algorithmic}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{listings} 
+\usepackage{graphicx} 
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{hyperref}
+%\usepackage{mdframed}
+
+\newcommand{\currentdata}{ 1 February 2017}
+\newtheorem{example}{Example}
+
+\begin{document}
+\vspace{-5cm}
+\begin{center}
+Department of Computer Science\\
+Technical University of Cluj-Napoca\\
+\includegraphics[width=10cm]{fig/footer}
+\end{center}
+\vspace{1cm}
+%\maketitle
+\begin{center}
+\begin{Large}
+ %\textbf{Introduction to Artificial Intelligence}\\
+\textbf{Intelligent Systems}\\
+\end{Large}
+\textit{Laboratory activity 2016-2017}\\
+\vspace{3cm}
+Project title: ....\\
+Tool: \\
+\vspace{1.5cm}
+Name:\\
+Group:\\
+Email:\\
+\vspace{6cm}
+Assoc. Prof. dr. eng. Adrian Groza\\
+Adrian.Groza@cs.utcluj.ro\\
+\vspace{1cm}
+\includegraphics[width=10cm]{fig/footer}
+\end{center}
+
+\tableofcontents
+
+\input{policy}
+
+%\chapter{Laboratory works}
+
+\chapter{AI projects and tools ($W_1$)}
+
+
+\colorbox{blue!20}{\fbox{\begin{minipage}{1.0\textwidth}
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item To identify existing projects for undergraduate level in the AI domain.
+\item To get awareness of the effort expected for the laboratory activity by browsing past projects at TUCN and other universities.
+\item To get used with the technical instrumentation used during this semester. 
+%That is: i) assigning the AI tool, ii) set your latex environment for writing your final report.
+\end{enumerate}
+\end{minipage}}}
+\vspace{0.2cm}
+
+At the beginning of each class, please write what do you expect to learn/achieve/understand/develop during the following two hours.
+
+\vspace{0.2cm}
+
+\colorbox{blue!20}{\fbox{\begin{minipage}{16cm}
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+\end{enumerate}
+\end{minipage}}}
+\vspace{0.2cm}
+This laboratory follows a project-based learning methodology for learning artificial intelligence.
+
+An ideal project should be one that demonstrates some creativity, 
+attempts to answer an interesting research question, 
+offers an interesting AI solution to a real scenario and validates the solution through graphs and experiments.
+These aims cannot be achieved without reading relevant AI articles for your scenario.
+
+\section{AI undergraduate projects}
+This section aims to provide you starting ideas on student AI projects.
+Browse the following resources:  
+\begin{enumerate}
+\item https://www.quora.com/What-are-basic-artificial-intelligence-projects-for-beginners
+ \item \href{http://www.akira.ruc.dk/~keld/teaching/projektforslag/ai_projects.pdf}{Project proposals in AI} at Roskilde University, Denmark
+\item \href{http://www.cs.cmu.edu/~./10701/projects.html}{Machine learning project} suggestions at School of Computer Science, Carnegie Mellon University (http://www.cs.cmu.edu/~epxing/Class/10701/project.html)  
+\item Challenges in artificial intelligence domain at \href{https://www.hackerrank.com/domains}{HacckerRank}
+\item Repository of AI assignments at \href{http://modelai.gettysburg.edu/}{AI-repository}
+\item Collection of projects at MIT open coursware for the Knowledge-Based Applications Systems class
+\href{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-871-knowledge-based-applications-systems-spring-2005/projects/}{MITOpenCoursware}
+\end{enumerate}
+
+The projects are intended to let you look in depth at some area of artificial intelligence 
+that may only be covered briefly in class or~\cite{russell2003artificial}. 
+You can see the AI lab as an opportunity for you to explore an interesting problem of your choice in the context of a real-world scenario.
+Hence, we encourage you to do some original research in the AI domain that is of interest to you. 
+To give you an idea, about how your fellows work as students, take a look at the examples below:
+
+%Here is a list of project ideas:
+
+\begin{enumerate}
+ \item A machine learning approach for identifying patterns at Eurovision musical competition. 
+\item Performance comparison of AI algorithms in the Wumpus world.
+\item A multi-agent system for playing the board game Risk. Assess the
+relative strength of each player and the strategic value of each country. 
+\item Intersection situation awareness and normative reasoning.
+\item Summarize an article written in wikipedia or other technical text.
+\item Checking if a small text is entailed by a larger text.
+\item Extracting arguments in a persuasive or legal text.
+\item A knowledge-based computer purchasing adviser.
+\item Build an ontology from a collection of documents using machine learning.
+\item Legal assistant in case of divorces. Splitting marital property between spouse.
+\item Advisor for installing a wind turbine.
+\item Compliance checking of architectural plans for buildings.
+\item Knowledge based system for automobile fault diagnosis.
+\item Real estate analyzer system. 
+\ietm Fake opinion detection system. 
+\end{enumerate}
+
+
+%Sample projects at TUCN are:
+
+%\begin{enumerate}
+% \item 
+%\end{enumerate}
+
+
+Projects at other universities:
+\begin{enumerate}
+ \item A project submitted by Greg Barish entitled "Approaches to integrating abstractions in graphplan-based planning systems" for the Artificial Intelligence Planning class at University of Southern California.
+\href{http://www.isi.edu/~blythe/cs541/Projects/barish.pdf}{Final Report}
+\item A project submitted by Victor L. Williamson entitled ``What to do With a Patient Who Has
+Chest Pain?'' \href{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-871-knowledge-based-applications-systems-spring-2005/projects/william_cp_ches.pdf}{Final report}
+\end{enumerate}
+
+You may also check AI books like "Programming Collective Intelligence" by Toby Segaran~\cite{book:1527985}. 
+It contains many interesting examples.
+
+\section{AI-related competitions}
+As part of your laboratory work, we encourage you to participate to various students competitions in AI:
+
+\begin{enumerate}
+\item Machine learning competitions: \href{https://www.kaggle.com/}{Kaggle}
+\item Ontology development competition: \href{http://fois2014.inf.ufes.br/p/call-for-ontology-competition.html}{Ontology Competition}
+\item Competition on computational models of argumentation: \href{http://argumentationcompetition.org/}{ICCMA}
+\item Competitive programming \href{https://www.hackerrank.com/domains}{HacckerRank}
+\item Student StarCraft AI tournament 2016 \href{http://sscaitournament.com/}{SSCAIT}
+\item Power trading agent competition \href{http://www.powertac.org/node/39}{PTAC}
+\item Ontology alignment evaluation initiative \href{http://oaei.ontologymatching.org/2015/}{OAEI2015}
+\end{enumerate}
+
+\paragraph{Disseminating your work.}
+ Presenting your results at student conferences increases your chances to obtain a master scholarship. 
+ One possible student conference is:
+
+\begin{enumerate}
+ \item Computer Science Students Conference at UBB and TUCN: 
+ \href{http://cs.utcluj.ro/csd/site/index.html}{CSSC}
+\end{enumerate}
+
+
+\section{Running latex}
+\LATEX is a typesetting system suitable for producing scientific and mathematical documents. 
+Three starting points are: 
+\begin{itemize}
+ \item \href{www.maths.tcd.ie/~dwilkins/LaTeXPrimer/{}Getting started with LaTeX (David R. Wilkins)} 
+\item \href{frodo.elon.edu/tutorial/tutorial/tutorial.html}{LaTeX Tutorial (Jeff Clark)}
+\item \href{http://cs-gw.utcluj.ro/~srazvan/articleSchema.tgz}{Very Brief Introduction to Latex} by Radu Slavescu
+\end{itemize}
+
+
+Kile is one latex editor. If installed, just type \texttt{kile} in the terminal. 
+
+
+\section{Linux support}
+
+Becoming familiar with the Linux requires patience. 
+You must have the desire to try and figure things out on your own, rather than having everything done for you. 
+Two starting references are:
+\begin{itemize}
+ \item \href{http://tldp.org/LDP/intro-linux/html/index.html}{Introduction to Linux A Hands on Guide, Machtelt Garrels} 
+ \item \href{http://cs-gw.utcluj.ro/~srazvan/articleSchema.tgz}{Brief Synopsis of Linux} by Radu Slavescu
+\end{itemize}
+
+Table~\ref{tab:commands} lists basic commands.
+
+
+\begin{table}
+\caption{\label{tab:commands}Quickstart linux commands.}
+\begin{center}
+\begin{tabular}{|l|l|}\hline
+Command & Meaning \\ \hline
+pwd & display present working directory \\ \hline
+ls & displays the files in the current working directory\\ \hline
+cd & change the directoris \\ \hline
+chmod +x & set a file as executable \\ \hline
+man & read man pages of a command\\ \hline
+ssh & connects to a secure shell\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+\section{Exercises}
+\begin{enumerate}
+ \item Compile the \texttt{is.tex} file in order to start writing your notes. 
+Recall that this documentation is also a \textit{support for you}, during the design and implementation of you ideas. 
+Make an habit in writing down your ideas from the first week in a professional manner.
+\item Identify 3 Web resources with ideas on student AI projects.
+\item Think at one of your hobbies. Would be possible to develop something on that line?
+\item Identify a media source for AI-news. Investigate interesting ideas in that news. 
+Do the AI-technologies behind these ideas appear in the AIMA book?
+\item Identify AI journals in Science Direct and Springer Verlag. Browse some abstracts from these journals.
+\item Identify an AI competition. Consider making a team of 2-3 students to participate at that competition.
+\item Imagine that you are the founder of a start-up. What kind of innovative project would be feasible for you company? 
+\item Write a short list (3 to 5) of possible projects for this lab. Be ambitios. 
+\item Display network information for your workstation.
+\item Connect via \texttt{ssh} to another workstation. 
+\end{enumerate}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 3       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 4       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 5       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 6       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 7       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 8       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 9       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 10       
+\end{minipage}}
+\vspace{0.5cm}
+
+\chapter{Installing the tool ($W_2$)}
+\colorbox{blue!20}{\fbox{\begin{minipage}{16cm}The teaching objectives for this week are:
+\begin{enumerate}
+ \item To install the tool on a Linux system
+\item To get aware of tool plugins, extensions, and running parameters.
+\end{enumerate}
+\end{minipage}}}
+
+\vspace{0.5cm}
+
+\colorbox{blue!20}{\fbox{\begin{minipage}{1.0\textwidth}
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+\end{minipage}}}
+\vspace{0.2cm}
+
+The AI lab follows the problem-based learning model~\cite{hmelo2004problem}. 
+In this model, you have to:
+\begin{enumerate}
+ \item identify a real world situation that has no clear (or right, or efficient) 
+solution;
+\item  develop a viable solution to the identified problem;
+\item  get new information through self-directing learning;
+\item  take the decisions needed during the lifecycle of your project 
+
+\end{enumerate}
+
+
+%(staff act as faccilitators by helping you during the cognitive process of reflection)
+The first sub-problem that you are facing is to install 
+the tool on a Linux distribution.
+Linux advantages
+
+First, you need to find the version of your operating system.
+To find the kernel version, type in a terminal \texttt{uname -a}.
+To find the Linux distribution type \texttt{lsb\_release -a}.
+
+Then you need to download the distribution of the tool adequate for your system.
+
+Extract the archive in your own directory. 
+Avoid using spaces for the directory name. 
+Identify a README file or Installation instructions for the tool.
+
+When browsing the requirements, check first whether they have been not 
+already installed.
+For instance, Java might be already in the system. 
+You can check this with \texttt{java -version}.
+
+List here the steps done for installing the tool. 
+A typical installation could look like:
+
+\begin{verbatim}
+./configure
+make
+make install
+export PATH=PATH:......
+\end{verbatim}
+
+List here the exact commands for running the tool. 
+These lines will save you precious time in the next week.
+
+Finally, you need to check the installation.
+
+
+In case something goes wrong:
+
+\begin{enumerate}
+ \item Try to install a newer/older version of the tool
+\item Try to obtain the source code and compile it.
+\item Install the proper version for the software requirements (i.e., correct LISP or Prolog),
+\item Take a look into the installation/running scripts or in the \texttt{makefile} file.
+\item Try to identify a version of the tool written in other programming language.
+\end{enumerate}
+
+It is your interest not to get stuck with this installation. 
+It is therefore important to identify a solution such that you 
+can start shaping your project from the next laboratory. 
+
+
+\section{Exercises}
+\begin{enumerate}
+ \item List the steps done for installing the tool. 
+ \item List the exact commands needed to run the tool. 
+ \item What other AI tools can use the output of your tool? 
+ Can you indentify such tools on the Web?
+ Try to assess the difficulty level and risks of integrating such tools for your project.
+\end{enumerate}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 1       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 3       
+\end{minipage}}
+\vspace{0.5cm}
+
+
+
+
+\chapter{Running and understanding examples ($W_3$)}
+
+\colorbox{blue!20}{\fbox{\begin{minipage}{1.0\textwidth} 
+                                          
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item To run and understand the toy examples provided by the tool
+\item To identify what realistic problems are adequate for your tool 
+\end{enumerate}
+\end{minipage}}}
+
+\vspace{0.5cm}
+
+\colorbox{blue!20}{\fbox{\begin{minipage}{1.0\textwidth} 
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+\end{minipage}}}
+
+
+Describe the examples that you run. 
+What type of problems can be supported by the tool?
+ 
+ \section{Exercises}
+\begin{enumerate}
+ \item Detail one example that you run. Which are the input and the output? 
+ Describe the structure of the code. 
+ \item Deescribe the real world problems that can be solved by your tool/algorithm??
+\end{enumerate}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 1       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2       
+\end{minipage}}
+\vspace{0.5cm}
+
+ 
+\chapter{Understanding conceptual instrumentation ($W_4$)}
+\label{ch:tool}
+
+
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item To understand the algorithm(s) on which your tool relies.
+\item To get used with writing professional algorithms in Latex
+\end{enumerate}
+
+Latex provides various environments for writing algorihms, including: 
+\texttt{algorithm, algorithmic, algorithmicx, algpseudocode, algorithm2e}.
+
+The following example algorithm has been taken from~\cite{groza2014ontology}.
+
+\begin{algorithm}
+\label{alg:eval}
+\caption{Required steps for AHP-based ontology evaluation.}
+
+\KwIn{$\mathcal{O}$ - set of candidate ontologies; 
+      $\mathcal{W}$ - set of keywords of the domain; 
+      $\mathcal{T}$ - the criteria tree}
+\KwOut{$\langle ontology, [evaluation\ values] \rangle$, association list with ontologies as keys and evaluation values as pairs}
+
+$\mathcal{W_D}\leftarrow Update(\mathcal{W}, Wordnet)$ %\Comment{Wordnet supports the extension of keywords of the domain}
+
+\ForEach{$o\in \mathcal{O}$}{$DomainCoverage(o, \mathcal{W}_D)$} %If results are not satisfactory, improve data at step 1 %TODO formula. 
+
+Define a \textit{domain coverage threshold} $\delta$ $\geq$ 0 
+
+$\mathcal{O}_{\delta} \leftarrow Select(\mathcal{O},\delta)$
+%TODO use algorithm syntax
+
+\ForEach{ $o \in\mathcal{O}_{\delta} $}{
+\ForEach{non-leaf criterion $k \in \mathcal{T}$}{complete the $PC$ matrix to determine the weights of its sub-criteria}
+
+
+\ForEach{leaf (atomic) criterion $k \in \mathcal{T}$}{$OntologyMetrics(k,o)$}
+%TODO alternatives normalization
+
+Normalize ontology measurements to obtain weights for alternatives
+
+$WeightedSum(o,PC)$
+
+}
+\end{algorithm}
+
+
+\section{Exercises}
+\begin{enumerate}
+ \item Big O complexity
+ \item Which are the latex options to write algorithms? 
+ Describe in one paragraph the main features of one such package for algorithms.
+\end{enumerate}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 1       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2       
+\end{minipage}}
+\vspace{0.5cm}
+
+
+
+\chapter{Project description ($W_5$)}
+
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item To have a clear description of what you intend to develop.
+\item To point to specific resources (datasets, knowledge bases, external tools) 
+that support the development of your idea and which minimise the risk of failure.
+\item To identify related work (articles) that are relevant or similar to your approach.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+
+To encourage the development of AI skills, 
+you  were required to come up with a significant semester project 
+You have to  apply ideas from the course to a problem of your own.
+
+Which domain to choose is a decision that only you can make. 
+The more aware of the tool capabilities, the more adequate the decision.
+Realistic and original scenarios are encouraged. 
+Well known toy problems (salesmen, map colouring, logistic planning, wumpus, sudoku, queens, missionaries and canibals, etc.) do not worth much for your grade. 
+Your scenario should be realistic and should be business oriented. 
+
+Select clearly defined problems and not generic ones 
+(i.e I will do something in the medical domain). 
+Note that the focus is both on programming and on modelling the reality into a formal representation.
+
+
+Before specifying your project you must understand as much as possible about the application domain (medicine, bank, human resource management, etc). 
+You must also understand functionality required by the stakeholders of your system. 
+Let the problem drive the modelling - the more you understand the domain, the more technical solutions need to be solved by you. 
+
+Consider answering to the following questions:
+\begin{enumerate}
+ \item What will your system do?
+\item Which is the scope of coverage your system aims for?
+\item What will be the input of your program?
+\item What will be the output of your program?
+\item What will be the knowledge of your system?
+\item Which would be the narrative description of running scenario(s)?
+\item Which are the stakeholders of your system?
+\item Which are the asumptions?
+\end{enumerate}
+
+\begin{example}[What will system do]
+ 
+\end{example}
+
+\begin{example}[Scope of the program]
+ 
+\end{example}
+
+In this problem-based model you learn what you 
+need to know in order to solve a problem. 
+However, note that you have total flexibility in stating your project objectives.
+For instance, if you consider that studying more 
+than one computational technology (or AI algorithms) brings more benefits, 
+you are encourage to do it. 
+You just have to frame your task under one scenario umbrella. 
+One example: you can investigate the problem of {\it fake review detection} with 
+various machine learning algorithms: decision trees, nayve bayes, neural networks, ensemble learning. 
+This road helps you to study and compare the above algorihtms on your own problem.
+A second example: you can help a {\it robot to escape from a maze} 
+with various search algorithms (A*, greedy, deep first, uniform cost) 
+or computation technologies (constraint satisfaction problems, planning, 
+searching with observations).
+Hence, both the problem-based model or a more algorithmic approach to AI 
+(if formulated under the umbrella of a single scenario) 
+are accepted for this laboratory.
+
+
+
+\section{Narrative description}
+This should be a simple textual description of your scenario.
+You should explain your project objectives.
+Put them all together in half a page.
+
+\section{Facts}
+You start the analyze of the problem by identifying 
+the relevant facts from the scenario.
+This fact-identification step helps you to represent the problem.
+
+
+\section{Specifications}
+List of specifications. 
+Use your knowledge from "System Engineering" on how to write specifications and requirments (see Exercise 1).
+
+\section{Top level design of the scenario}
+Technical description of your scenario. 
+In some cases, you may provide a figure with the architecture of the system. 
+
+
+\section{Knowledge acquisition}
+You should be aware that computing interacts with many different domains. 
+Solutions to many AI problems require both computing skills and domain knowledge.
+
+First, you should ask yourself if you have the necessary background and resources to do
+a project in the chosen area. 
+
+\paragraph{How do represent knowledge?} 
+Your system relies on a knowledge base.
+You have to describe how do you represent this knowledge.
+You might choose between different logics: 
+propositional logic, first order logic, modal logics, description logics, epistemic logics, 
+temporal logics, and so on. 
+
+\paragraph{Where are you getting the required knowledge/data}
+Point towards the knowledge bases that you plan to exploit. 
+The existence of these sources are required to prove that your approach is realistic.
+
+Examples of knowledge sources include:
+\begin{itemize}
+\item Data sets: i.e., https://archive.ics.uci.edu/ml/datasets.html 
+\item Statistics: i.e., http://ec.europa.eu/eurostat 
+\item Ontology repositories in OWL or RDF format.
+\end{itemize}
+
+
+If you will be using books, give their reference. 
+If you hope to exploit people for elicitation, give their names.
+If you aim to use data sources or knowledge repositories list them and be sure that you have 
+access to the needed knowledge. 
+Indicate what you have accomplished so far in knowledge acquisition. 
+
+
+
+
+\section{Related work}
+You have to identify articles or conference papers relevant to your scenario.
+Searching for adequate references can be both rewarding and frustrating.
+
+Browse online libraries like:
+\begin{itemize}
+ \item Science Direct
+ \item IEEE Computer Society Digital Library: IEEEXplore
+ \item SpringerLink:  http://www.springerlink.com/computer-science/
+ \item ACM Digital library: http://portal.acm.org/dl.cfm
+%\item The Collection of Computer Science Bibliographies: http://liinwww.ira.uka.de/bibliography/
+%\item Computer Science Technical Reports: http://www.nzdl.org/
+\end{itemize}
+A valuable resource is Google Scholar. 
+Some references may be frely available on ResearchGate. 
+
+Looking at the examples remains the best ways of learning how to present a literature analysis. 
+Eacy article does include such section.
+
+
+Obtain the \texttt{.bib} file of each article that you will rely on. 
+Cite and very briefly describe the main idea of each paper that you have read.
+Save the most relevant related papers in a local directory.
+Use your own words. 
+Don't use automatic translation tools (i.e., Google translate) just to expand your documentation.
+You should already be aware that this is a form of cheating. 
+Everything in your project that does not come with a citation is assumed to be your own work.
+
+
+The following is an example of such \texttt{bib} structure:
+
+\begin{verbatim}
+ @article{bench-capon:argumentation-in-ai,
+ author = {Bench-Capon, Trevor J. M.  and Dunne, Paul E. },
+ title = {{A}rgumentation in {A}rtificial {I}ntelligence},
+ journal = {Artificial Intelligence},
+ volume = {171},
+ number = {10-15},
+ year = {2007},
+ issn = {0004-3702},
+ pages = {619--641},
+ doi = {http://dx.doi.org/10.1016/j.artint.2007.05.001},
+ publisher = {Elsevier Science Publishers Ltd.},
+ address = {Essex, UK}
+}
+\end{verbatim}
+
+Don't forget to include the above structure in your \texttt{.bib} file. 
+Then, generate the \texttt{.bbl} file in order to correctly appear in the \textit{Bibliography} section.
+
+
+o sum up what projects
+accomplish in a Twitter-sized phrase (140 characters)
+
+\chapter{Preliminary results ($W_7$)}
+This section corresponds to the midway report in week 7.
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item To prove that you have managed to write few lines of code of your own.
+\item To prove that the knowledge or data required are already obtained.
+\end{enumerate}
+
+These objectives decreases the risk to fail. 
+You should be aware that failing to meet the above objectives in week 
+7 indicates high risks in obtaining relevant results at the end of the semester.
+Take urgent measures to overcome these difficulties.
+
+\section{Exercises}
+\begin{enumerate}
+\item Sum up what is the aim of your project in a Twitter-sized phrase (140 characters)
+\item Recall or identify an engineering methodology to write specifications. 
+ Cite this methodology and employ it for specifying your project.
+ \item Which are the differences between requirments and specifications? 
+ \item Identify similar scenarios proposed by your collegues. 
+ Think at some collaboration with one of your collegues having similar interests.
+\end{enumerate}
+
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 1       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 3       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 4       
+\end{minipage}}
+\vspace{0.5cm}
+
+
+
+\chapter{Implementation details ($W_9$)}
+
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item Illustrate each aspect of the reality that you have 
+ modelled in your solution.
+\item To explain the relevant code from your scenario.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+Projects in artificial intelligence consist of developing new solutions. 
+
+
+\section{Relevant code}
+
+Provide the relevant code (see an example in Fig.~\ref{fig:code}).
+You can use "verbatim" package or "listing" package. 
+Complement the code with its corresponding textual description.
+
+\begin{figure}
+\begin{verbatim}
+(full-reset)
+(instance a Argument)
+(related a b attacks)
+(concept-instances Argument) 
+\end{verbatim}
+\caption{Modelling arguments in Racer.}
+\label{fig:code} 
+\end{figure}
+
+The eager student may use concepts from \textit{literate programming}.
+
+\section{Common bad practice in AI undergraduate projects}
+
+\paragraph{The over-estimated AI programmer.} $ $
+
+{\it Bad practice}: Excepting few genial students, you tend to overestimate your AI-programming abilities. 
+That is, you start to write a large amount of code. (Here large might be 20 lines).
+When testing it, nothing run. 
+You start to debug a line or to remove it.
+Your program will not run this time too. 
+You remove or comment another line. 
+And so on, until you have a single line of code.
+If you are lucky, that could run. 
+But you lose a lot of time in this enterprise.
+
+{\it Solution}: In the early stage of writing code, write a line of code and test it. 
+If it works, write another line and test it. 
+And so on. 
+That is, you are exploiting the interactive environments provided by 
+AI tools or languages like LISP and PROLOG.
+You should hold your horses and 
+have the most possible skeptical attitude towards your code.  
+As you get experience, your will be noticing that writing 
+AI-declarative code is more effective than procedural one.  
+
+
+\paragraph{The eyewash bug.} $ $
+{\it Bad practice}: You spend most of your programming time to develop a GUI for your AI-system. 
+Don't bother. I am sympathetic with Sania Twain's view on GUIs: "You don't impress me much".
+Such things are indeed important in computer science, but not relevant in this AI class.
+
+
+%\paragraph{The stucker bug} 
+
+\paragraph{The not-organised student.}
+You are not organised, if something like this will happen to you:
+\begin{itemize}
+ \item You do not find your project and yield "Someone removed my project!". 
+Most of the time your are logged with a different user as usual. 
+Check this with \texttt{who am i}. 
+This is not a rhetorical question, but a Linux command.
+\item You are working in a different directory. 
+Type \texttt{pwd} and \texttt{ls} to check that your executables are indeed in the current working directory.
+If you have been lazy to set your PATH variable, you might just forgot to type \texttt{./} 
+for executing the command in the current directory.
+\end{itemize}
+
+\paragraph{The omniscient student.}
+You are in this cathegory if you fail to add references. 
+Reading relevant references is mandatory to deliver a decent project. 
+
+\section{Exercises}
+\begin{enumerate}
+ \item What latex packages can be used to format code? 
+ \item 
+\end{enumerate}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 1       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2       
+\end{minipage}}
+\vspace{0.5cm}
+
+
+
+
+\chapter{Tool expressivity ($W_{10}$)}
+
+
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item Describe each technical instrumentation provided 
+by the tool that was enacted in your implementation.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+
+
+%For instance:
+%{\it "Racer offers also the capability to use {\it rules}. 
+%he code in Fig.~\ref{fig:rules} illustrates my rule used to create instances of type student."}
+
+
+\chapter{Graphs and experiments ($W_{11}$)}
+
+The objectives for this week are:
+\begin{enumerate}
+ \item To describe and interpret each experiment that you have performed
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+
+An experiment investigates how some variables are related. 
+Usually, experiments verify a previosly formulated hypothesis.
+Such hypothesis may investigate how your software degrades its performance with larger inputs.
+You will need to run simulations to see how your implementation is affected by different inputs.
+
+
+Note that running experiments mean more than testing your solution. 
+It helps to describe and prove how did you test your implementation.
+Moreover, during this lab, you will often need to: 
+1) generate random data for your algorithms,
+2) measure their performance (number of operations, execution time),
+3) draw charts,
+4) interpret the obtained results.
+
+The eager student might want to take a look at literature on how to design computer experiments, such as~\cite{fang2005design}. Section 5.6 from~\cite{fang2005design} might be of particular interest for some of you. 
+If your experiments include a stochastic parameter, you need to include a test for statistical significance. 
+This is important to prove that your ouputs are not a random effect.
+
+
+
+\begin{figure}
+%\includegraphics[width=8cm]{} 
+Graphs always impress teachers...
+\caption{Increasing the accuracy with the number of samples.}
+\label{fig:accuracy}
+\end{figure}
+
+You should develop a test suite that can be used to show your code works correctly under a various conditions/problems/scenarious.
+
+
+\section{Evaluation metrics}
+
+
+
+\chapter{Related work and documentation ($W_{12}$)}
+
+The teaching objectives for this week are:
+\begin{enumerate}
+ \item To compare your results to related work.
+\item To discuss the advantages and limitations of your solution.
+\item To deliver a professional documentation of your work.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+
+This chapter convinces me that you know how your work fits into the larger domain area.
+
+
+%For instance: \cite{chesnevar:Survey2000}
+
+\section{Related approaches}
+You need to support your opinions with trustworthy evidence and references.
+You need also to decide how your problem fits into a wider context.
+The quality of your reference is a strong indicator that you 
+managed to scrutinise different perspectives on the topic.
+Proving understanding of the references is the foundation of a good grade. 
+By start coding without reading relevant references, you will most probable write something irelvant for the application domain.  
+
+Identify and describe other solutions for solving the same (or similar) scenario like yours.
+
+\section{Advantages and limitations of your solution}
+This part of the conclusions chapter should be an evaluation of your work. 
+
+
+\section{Possible extensions of the current work}
+
+
+
+
+
+
+\chapter{Project demo and documentation ($W_{13}$)}
+
+The teaching objectives for this week are:
+\begin{enumerate}
+\item Deliver the technical documentation of your project
+\item Demonstrate your running scenario to the instructor
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+
+Demonstrate in 4-5 minutes your running scenario to the instructor. 
+The demo should take place on a Linux distribution
+
+
+From your final report, remove the text/examples/algorithms/rules/bibliographic references/etc - keep only your notes. 
+If the documentation does not meet minimum standard for lisability and scientific discourse, 
+it will be classified by the furious teaching assistant as unacceptable and therefore rejected.
+
+
+
+
+\section{Exercises}
+\begin{enumerate}
+ \item How you would advocate your project to a possible client?
+ \item Write five highlights of your results (maximum 85 characters including spaces).
+ \item 
+\end{enumerate}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 1       
+\end{minipage}}
+\vspace{0.5cm}
+
+\fbox{\begin{minipage}{16cm}
+Solution to exercise 2
+\end{minipage}}
+\vspace{0.5cm}
+
+
+\chapter{Results dissemination and feedback ($W_{14}$)}
+
+The teaching objectives for this week are:
+\begin{enumerate}
+\item To practice public presentation.
+\item To get used with the beamer template for making scientific presentations
+ \item To get feedback from your collegues. 
+\end{enumerate}
+
+\vspace{0.5cm}
+
+My personal objectives for this class are:
+\begin{enumerate}
+ \item 
+ \item 
+\end{enumerate}
+
+Learning is enhaced by constructive feedback on the strong/weak points of your performance during AI laboratory. 
+This feedback focuses on the scientific relevance of your results and it aims to complement the feedback encapsulated in the grade.
+Do not take criticism personally. 
+It is the project that is being critisised, and not your competence or intelligence. 
+
+
+\subsection{Public presentation}
+10 slides in beamer format for a timeslot of 5 minutes presentation plus 5 minutes questions.
+Questions may be posed by your collegues or the teacher. 
+
+One of the main difficulties when designed slides is how to find the right amount of 
+technical details to be included. 
+No technical details rise the question of "bla bla story telling". 
+To much technical details may bore the audience and also you may fail to fit within the time assigned. 
+
+Two introductory tutorials on beamer are~\cite{mertz2005beamer} and~\cite{batts2007beamer}.
+The beamer manual is: 
+
+\href{http://cs-gw.utcluj.ro/~srazvan/articleSchema.tgz}{Presentation template}
+
+During presentation, it is a mistake to focus on the tool that you have been used. 
+During 5 minutes, you have to focus only on your results and to market your work.
+Don't forget to include technical details and graphs.
+
+A method for disseminating yor research consists of writing 3-5 highlights.
+Highlights consist of a set of bullet points 
+that convey the core findings of your work.
+For examples, see http://www.elsevier.com/highlights.
+
+You are now playing the role of your project advocator. 
+Always keep in mind that you have to market your project only, and not the tool that you rhave relied on.
+
+
+
+\subsection{Self-assessment}
+
+\begin{table}
+\begin{tabular}{p{8cm}l}
+Aspect & Self-assessment\\ \hline
+How did you manage to master the tool?& \\
+How realistic was your scenario? & \\
+Relevance of the running experiments &\\
+Knowledge and skills achieved & \\ 
+Capacity to market your effort and results through documentation and presentation& \\
+\hline
+\end{tabular}
+\caption{Self-assessment. Assess each aspect, with: enthusiastic, satisfacatory, unsatisfacatory, bad} 
+\end{table}
+
+‘What did you do well? Give examples’
+
+‘Where do you think the assignment is weak?’
+
+
+\subsection{Formative feedback}
+The last week is an opportunity for interested students to obtain 
+a formative feedback. 
+This is not an opportunity to negatiate your grade. 
+In the previous week you had your chanches to advocate your work. 
+
+
+
+\subsection{Problem-based learning}
+
+One scope was to engage you in a kind of self-directed learning.
+The rationale is that you are more heterogeneous and 
+you have different learning experiences and maturity levels.
+The focus was not on mastering AI algorithms but to apply them in practice. 
+By practice I mean realistic scenarious.
+Ideally, you should have developed more awareness of the social, 
+environmental, economic aspects of a real problem. 
+
+
+\appendix
+
+\chapter{Your original code}
+\label{app:code}
+This section should contain only code developed by you, without any line re-used from other sources. 
+This section helps me to correctly evaluate your amount of work and results obtained. 
+Including in this section any line of code taken from someone else leads to failure of IS class this year.
+Failing or forgetting to add your code in this appendix leads to grade 1.
+Don't remove the above lines.
+
+
+
+
+\chapter{Quick technical guide for running your project}
+
+Requirments
+
+Step by step technical manual
+
+%\input{mycode}
+
+\chapter{Check list}
+
+\begin{enumerate}
+ \item Your original code is included in the Appendix~\label{app:code}.
+ \item Your original code and figures are readable.
+ \item All the references are added in the Bibliography section.
+  \item All your figures are referred in text (with command ref{}), described in the text, and they have relevant caption.
+ \item The final documentation describes only your project. Don't forget to remove all tutorial lines in the template (like these one).
+ \item The main algorithm of your tool is formalised in latex template in chapter~\ref{ch:tool}.
+  
+\end{enumerate}
+
+
+\bibliographystyle{plain}
+\bibliography{is}
+
+
+\vspace{2cm}
+\begin{center}
+Intelligent Systems Group\\
+\includegraphics[width=10cm]{fig/footer}
+\end{center}
+
+
+
+\end{document}

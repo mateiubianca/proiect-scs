@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{batts2007beamer}
+Charles~T Batts.
+\newblock A beamer tutorial in beamer.
+\newblock {\em The University of North Carolina at Greensboro, Department of
+  Computer Science}, 2007.
+
+\bibitem{fang2005design}
+Kai-Tai Fang, Runze Li, and Agus Sudjianto.
+\newblock {\em Design and modeling for computer experiments}.
+\newblock CRC Press, 2005.
+
+\bibitem{7034697}
+A.~Groza, I.~Dragoste, I.~Sincai, I.~Jimborean, and V.~Moraru.
+\newblock An ontology selection and ranking system based on the analytic
+  hierarchy process.
+\newblock In {\em Symbolic and Numeric Algorithms for Scientific Computing
+  (SYNASC), 2014 16th International Symposium on}, pages 293--300, Sept 2014.
+
+\bibitem{hmelo2004problem}
+Cindy~E Hmelo-Silver.
+\newblock Problem-based learning: What and how do students learn?
+\newblock {\em Educational psychology review}, 16(3):235--266, 2004.
+
+\bibitem{mertz2005beamer}
+Andrew Mertz and William Slough.
+\newblock Beamer by example.
+\newblock {\em The PracTEX Journal}, 4, 2005.
+
+\bibitem{russell2003artificial}
+Stuart~Jonathan Russell, Peter Norvig, John~F Canny, Jitendra~M Malik, and
+  Douglas~D Edwards.
+\newblock {\em Artificial intelligence: a modern approach}, volume~2.
+\newblock Prentice hall Upper Saddle River, 2003.
+
+\bibitem{book:1527985}
+Toby Segaran.
+\newblock {\em Programming Collective Intelligence: Building Smart Web 2.0
+  Applications}.
+\newblock O'Reilly Media, 2007.
+
+\end{thebibliography}
